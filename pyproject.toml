@@ -1,0 +1,22 @@
+[project]
+name = "db-rag-app"
+version = "0.1.0"
+description = "Databricks RAG Application Package"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "pyspark",
+    "langchain",
+    "langchain-community",
+    "mlflow",
+    "databricks-sdk",
+    "databricks-vectorsearch>=0.22",
+    "faiss-cpu",
+    "sentence-transformers",
+    "transformers"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
